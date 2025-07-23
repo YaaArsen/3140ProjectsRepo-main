@@ -32,7 +32,7 @@ document.getElementById("submitButton").onclick = async function(){
                     redirect: 'follow'
                 };
 
-                fetch("https://jstris.jezevec10.com/api/leaderboard/1?mode=1&offset=0", requestOptions)
+                fetch("/api/leaderboard/1?mode=1&offset=0", requestOptions)
                   .then(response => response.text())
                   .then(result => console.log(result))
                   .catch(error => console.log('error', error));
